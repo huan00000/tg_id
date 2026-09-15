@@ -8,7 +8,7 @@ async def reply_id(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
 
     await update.message.reply_text(
-        f"你的 Telegram ID：{user.id}"
+        f"Telegram ID：{user.id}"
     )
 
 app = Application.builder().token(TOKEN).build()
